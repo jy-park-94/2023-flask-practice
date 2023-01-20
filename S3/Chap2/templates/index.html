@@ -1,0 +1,16 @@
+<h1>Welcome to the Puppy Survey</h1>
+<form method="post">
+  {{ form.hidden_tag() }} {{ form.breed.label }} {{ form.breed() }}
+  <br />
+  {{ form.neutered.label }} {{ form.neutered() }}
+  <br />
+  {{ form.mood.label }} {{ form.mood() }}
+  <br />
+  {{ form.food_choices.label }} {{ form.food_choices() }}
+  <br />
+  <p>Any other feedback?</p>
+  <br />
+  {{ form.feedback.label }} {{ form.feedback() }}
+  <br />
+  {{ form.submit()}}
+</form>
