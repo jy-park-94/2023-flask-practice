@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="jumbotron">
+  <p>Let's see how you performed !!</p>
+  <p>
+    Your username <strong>"{{username}}"</strong> pass the {{n_reqs}}
+    requirements
+  </p>
+  {% if n_reqs == 3 %}
+  <h1>Great job, you can use this name !</h1>
+  {% else %}
+  <h1>Try using another name.</h1>
+  <p>Here are the requirements you failed:</p>
+  <ul>
+    {% if reqs[0] == False %}
+    <li>You did not use an upper case letter somewhere.</li>
+    {% endif %} {% if reqs[1] == False %}
+    <li>You did not use a lower case letter somewhere.</li>
+    {% endif %} {% if reqs[2] == False %}
+    <li>You did not use a number at the end.</li>
+    {% endif %}
+  </ul>
+  {% endif %}
+</div>
+
+{% endblock %}

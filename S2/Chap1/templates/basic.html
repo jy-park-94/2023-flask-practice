@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to the site !</h1>
+    <h2>My name is {{ my_name }}</h2>
+    <h2>Reversed spellings are</h2>
+    <ul>
+      {% for letter in letters[::-1] %}
+      <li>{{letter}}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for key,value in my_dict.items() %} {% if key == 'age' and value > 30
+      %}
+      <li>He's old enough, so I don't like to tell my age</li>
+      {% else %}
+      <li>{{key}} is {{value}}</li>
+      {% endif %} {% endfor %}
+    </ul>
+    <h2>{{my_dict}}</h2>
+    <h2>Here's a photo below.</h2>
+    <img width="300" src="../static/WIN_20221018_17_43_49_Pro.jpg" />
+  </body>
+</html>

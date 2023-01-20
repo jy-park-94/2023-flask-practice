@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+  <h1>Oops !</h1>
+  <h3>Something's going wrong.</h3>
+  <a href="{{url_for('index')}}">Go back to home</a>
+  <p>{{error}}</p>
+</div>
+{% endblock %}
