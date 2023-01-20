@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Assessment Test HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Puppy Adoption Page</h1>
+      <h3>
+        Please enter your information to adopt a puppy and we'll email you back.
+      </h3>
+    </header>
+    <section>
+      <p>
+        Please Note: First Name, Last Name, Password, and Email are required
+      </p>
+      <form>
+        <label>First Name: </label>
+        <input type="text" hint="First Name" />
+        <label>Last Name: </label>
+        <input type="text" hint="Last Name" />
+        <br />
+        <label>Email: </label>
+        <input type="email" hint="name@email.com" />
+        <label>Password: </label>
+        <input type="password" />
+        <p>Are you over the age of 18?</p>
+        <span>
+          <label>Yes:</label>
+          <input type="radio" name="adult" value="Yes" />
+          <label>No:</label>
+          <input type="radio" name="adult" value="No" />
+        </span>
+        <p>Do you have a Credit Card or PayPal?</p>
+        <select name="payment" id="payment-select">
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">Paypal</option>
+        </select>
+        <div>
+          <button type="submit">Submit Form</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
